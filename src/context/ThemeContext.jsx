@@ -5,9 +5,13 @@ const ThemeContext = createContext();
 export function ThemeProvider({ children }) {
 
     const [darkMode, setDarkMode] = useState(() => {
-
-        return localStorage.getItem("theme") === "dark";
-
+        const savedTheme = localStorage.getItem("theme");
+    
+        if (savedTheme === null) {
+            return true; // First visit → Dark Mode
+        }
+    
+        return savedTheme === "dark";
     });
 
     useEffect(() => {
