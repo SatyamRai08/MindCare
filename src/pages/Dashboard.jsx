@@ -120,111 +120,123 @@ const sleepScore = Math.min(100, moodScore + 9);
 
         <div className="mt-12 space-y-4">
 
-          <motion.button
-            whileHover={{ x: 8, scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            className="
-            flex
-            items-center
-            gap-4
-            text-lg
-            font-semibold
-            text-yellow-400
-            "
-          >
-            <FaHome />
-            Dashboard
-          </motion.button>
+        <motion.button
+  whileHover={{ x: 8, scale: 1.03 }}
+  whileTap={{ scale: 0.97 }}
+  onClick={() => navigate("/dashboard")}
+  className="
+  flex
+  items-center
+  gap-4
+  text-lg
+  font-semibold
+  text-yellow-400
+  cursor-pointer
+  "
+>
+  <FaHome />
+  Dashboard
+</motion.button>
 
-          <motion.button
-            whileHover={{ x: 8 }}
-            whileTap={{ scale: 0.97 }}
-            className="
-            flex
-            items-center
-            gap-4
-            text-lg
-            text-gray-700
-            dark:text-gray-300
-            hover:text-yellow-400
-            transition
-            "
-          >
-            <FaBrain />
-            Assessment
-          </motion.button>
+<motion.button
+  whileHover={{ x: 8 }}
+  whileTap={{ scale: 0.97 }}
+  onClick={() => navigate("/activity")}
+  className="
+  flex
+  items-center
+  gap-4
+  text-lg
+  text-gray-700
+  dark:text-gray-300
+  hover:text-yellow-400
+  transition
+  cursor-pointer
+  "
+>
+  <FaBrain />
+  Assessment
+</motion.button>
 
-          <motion.button
-            whileHover={{ x: 8 }}
-            whileTap={{ scale: 0.97 }}
-            className="
-            flex
-            items-center
-            gap-4
-            text-lg
-            text-gray-700
-            dark:text-gray-300
-            hover:text-yellow-400
-            transition
-            "
-          >
-            <FaBookMedical />
-            Articles
-          </motion.button>
+<motion.button
+  whileHover={{ x: 8 }}
+  whileTap={{ scale: 0.97 }}
+  onClick={() => navigate("/articles")}
+  className="
+  flex
+  items-center
+  gap-4
+  text-lg
+  text-gray-700
+  dark:text-gray-300
+  hover:text-yellow-400
+  transition
+  cursor-pointer
+  "
+>
+  <FaBookMedical />
+  Articles
+</motion.button>
 
-          <motion.button
-            whileHover={{ x: 8 }}
-            whileTap={{ scale: 0.97 }}
-            className="
-            flex
-            items-center
-            gap-4
-            text-lg
-            text-gray-700
-            dark:text-gray-300
-            hover:text-yellow-400
-            transition
-            "
-          >
-            <FaUserMd />
-            Experts
-          </motion.button>
+<motion.button
+  whileHover={{ x: 8 }}
+  whileTap={{ scale: 0.97 }}
+  onClick={() => navigate("/experts")}
+  className="
+  flex
+  items-center
+  gap-4
+  text-lg
+  text-gray-700
+  dark:text-gray-300
+  hover:text-yellow-400
+  transition
+  cursor-pointer
+  "
+>
+  <FaUserMd />
+  Experts
+</motion.button>
 
-          <motion.button
-            whileHover={{ x: 8 }}
-            whileTap={{ scale: 0.97 }}
-            className="
-            flex
-            items-center
-            gap-4
-            text-lg
-            text-gray-700
-            dark:text-gray-300
-            hover:text-yellow-400
-            transition
-            "
-          >
-            <FaChartLine />
-            Progress
-          </motion.button>
+<motion.button
+  whileHover={{ x: 8 }}
+  whileTap={{ scale: 0.97 }}
+  onClick={() => navigate("/progress")}
+  className="
+  flex
+  items-center
+  gap-4
+  text-lg
+  text-gray-700
+  dark:text-gray-300
+  hover:text-yellow-400
+  transition
+  cursor-pointer
+  "
+>
+  <FaChartLine />
+  Progress
+</motion.button>
 
-          <motion.button
-            whileHover={{ x: 8 }}
-            whileTap={{ scale: 0.97 }}
-            className="
-            flex
-            items-center
-            gap-4
-            text-lg
-            text-gray-700
-            dark:text-gray-300
-            hover:text-yellow-400
-            transition
-            "
-          >
-            <FaCog />
-            Settings
-          </motion.button>
+<motion.button
+  whileHover={{ x: 8 }}
+  whileTap={{ scale: 0.97 }}
+  onClick={() => navigate("/settings")}
+  className="
+  flex
+  items-center
+  gap-4
+  text-lg
+  text-gray-700
+  dark:text-gray-300
+  hover:text-yellow-400
+  transition
+  cursor-pointer
+  "
+>
+  <FaCog />
+  Settings
+</motion.button>
 
         </div>
 
