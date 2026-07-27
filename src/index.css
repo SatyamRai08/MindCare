@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #facc15;
+  color: #000;
+}
+
+/* ===========================
+   React Calendar
+=========================== */
+
+.react-calendar {
+  width: 100%;
+  background: #16111f;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  font-family: inherit;
+}
+
+.react-calendar button {
+  color: white;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.react-calendar button abbr {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hover */
+
+.react-calendar__tile:hover {
+  background: #2a223a !important;
+  border-radius: 10px;
+}
+
+.react-calendar__tile:hover abbr {
+  color: white !important;
+}
+
+/* Today's Date */
+
+.react-calendar__tile--now {
+  background: #2a223a !important;
+  border-radius: 10px;
+}
+
+.react-calendar__tile--now abbr {
+  color: white !important;
+  font-weight: 700;
+}
+
+/* Selected Date */
+
+.react-calendar__tile--active {
+  background: #facc15 !important;
+  border-radius: 10px;
+}
+
+.react-calendar__tile--active abbr {
+  color: #000 !important;
+  font-weight: 700;
+}
+
+/* Prevent hover from overriding selected */
+
+.react-calendar__tile--active:hover {
+  background: #facc15 !important;
+}
+
+.react-calendar__tile--active:hover abbr {
+  color: #000 !important;
+}
+
+/* Navigation */
+
+.react-calendar__navigation button {
+  color: white !important;
+  font-size: 18px;
+}
+
+.react-calendar__navigation button:hover {
+  background: #2a223a !important;
+  border-radius: 10px;
+}
+
+/* Weekdays */
+
+.react-calendar__month-view__weekdays {
+  color: #9ca3af;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.react-calendar__month-view__weekdays abbr {
+  text-decoration: none;
+}
+
+/* Remove default borders */
+
+.react-calendar__tile {
+  border-radius: 10px;
+}
